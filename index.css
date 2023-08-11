@@ -81,12 +81,7 @@ background-color: var(--switcher-main);
 opacity: 0.8;
 cursor: pointer;
 }
-.navbar .navlinks li a:hover{
-    background-image: linear-gradient(to top, #f09898, #3E8DFF);
-    transition: .3s ease-in;
-    padding: 6px 12px;
-    border-radius: 6px;
-}
+
 .appearance .color-icon{
     position: relative;
 }
@@ -112,6 +107,12 @@ opacity: 2;
     pointer-events: none;
 }
 
+.navbar .navlinks li a:hover{
+    background-image: linear-gradient(to top, #f09898, #3E8DFF);
+    transition: .3s ease-in;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
 .color-icon.open .color-box{
 opacity: 1;
 pointer-events: auto;
@@ -190,8 +191,13 @@ pointer-events: auto;
     width: 100%;
     flex-direction: column;
     justify-content: center;
-    padding: 0 60px;
+    padding: 10px 10px 60px 10px;
     background: var(--light-bg);
+}
+
+.sections-container {
+    display: flex;
+    justify-content: space-between;
 }
 
 .home-content h2{
@@ -236,3 +242,94 @@ pointer-events: auto;
         width: 70%;
     }   
 }
+.checkbtn{
+    font-size: 30px;
+   color: #f0f8ff;
+   float: right;
+   position: relative;
+   margin-right: 30px;
+   line-height: 80px;
+   cursor: pointer;
+   display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width: 952){
+    .navbar .navlinks li a{
+        font-size: 70px;
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 70px;
+        left: 100%;
+        text-align: center;
+    }
+     .navbar ul {
+       display: block;
+       padding: 10px;
+     
+    }
+    .navbar ul li{
+        padding: 10px;
+        font-size: 16px;
+    }
+    .navbar ul li a{
+        font-size: 16px;
+    }
+    
+    .navbar .navlinks li a:hover:hover,.navbar .navlinks li a:hover:active{
+        background: none;
+        color: rgb(245, 13, 13);
+        transition: .2s ease;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+    .home-content{
+        display: inline-block;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0x 50px;
+        background: var(--light-bg);
+    }
+    .home-content .button {
+        display: auto;
+    }
+    .sections-container {
+        display: block;
+        justify-content: center;
+    }
+    .owen-logo {
+        width: 200px;
+        height: 100px;
+        margin-top: 20px;
+      }
+     .owen-pic{
+        width: 200px;
+        height: 400px;
+        margin-top:50px;
+     } 
+}
+.owen-logo {
+    width: 500px;
+    height: 200px;
+    margin-top: 70px;
+  }
+ .owen-pic{
+    width: 70px;
+    height: 90px;
+    margin-top:30px;
+ } 
