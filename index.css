@@ -81,7 +81,12 @@ background-color: var(--switcher-main);
 opacity: 0.8;
 cursor: pointer;
 }
-
+.navbar .navlinks li a:hover{
+    background-image: linear-gradient(to top, #f09898, #3E8DFF);
+    transition: .3s ease-in;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
 .appearance .color-icon{
     position: relative;
 }
